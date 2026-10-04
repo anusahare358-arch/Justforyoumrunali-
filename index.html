@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0c152b">
+  <meta name="description" content="A little surprise, a few favourite pictures, and a song. Just for you.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="A little something, just for you ✨">
+  <meta property="og:description" content="Open your little surprise. Smile karna allowed hai.">
+  <title>Just for you ✨</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230c152b'/%3E%3Cpath d='M32 10l6 16 16 6-16 6-6 16-6-16-16-6 16-6z' fill='%23efc990'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/63312.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#" id="home-link" aria-label="Back to the opening"><span aria-hidden="true">✦</span> just for you</a>
+    <button class="music-button" id="music-button" type="button" aria-label="Play Enna Sona" aria-pressed="false">
+      <span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span id="music-label">Enna Sona · play</span>
+    </button>
+  </header>
+  <main>
+    <section class="screen intro" id="intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow">A LITTLE SOMETHING, ONLY FOR YOU</p>
+        <h1 id="intro-title">Tum itni<br><em>cute</em> kyun ho<span class="gold">?</span></h1>
+        <p class="intro-text">Ek chhoti si cheez banayi hai tumhare liye.<br>Smile karna allowed hai. <span aria-hidden="true">😉</span></p>
+        <button class="button primary" id="open-button" type="button">Show me <span aria-hidden="true">✦</span></button>
+        <p class="micro-note">Sound on, if you like <span aria-hidden="true">♫</span></p>
+      </div>
+      <div class="photo-stack" aria-hidden="true">
+        <div class="stack-card back-one"><img src="assets/63316.jpg" alt="" decoding="async"></div>
+        <div class="stack-card back-two"><img src="assets/63308.jpg" alt="" decoding="async"></div>
+        <div class="stack-card front"><div class="cover-photo"><img src="assets/63312.jpg" alt="" fetchpriority="high" decoding="async"></div><span>some pictures. one very cute person.</span></div>
+        <span class="stack-sparkle">✧</span>
+        <span class="side-note">a small reason to smile</span>
+      </div>
+    </section>
+
+    <section class="screen album" id="album" aria-labelledby="album-title" hidden>
+      <div class="album-photo-column">
+        <figure class="portrait-frame" id="portrait-frame">
+          <img class="portrait-haze" id="portrait-haze" src="assets/63312.jpg" alt="" aria-hidden="true">
+          <img class="main-portrait" id="main-photo" src="assets/63312.jpg" alt="You in a blue saree, holding roses" width="865" height="1536">
+          <figcaption class="photo-foot"><span id="photo-caption">the one with the roses</span><span id="frame-count">01 / 09</span></figcaption>
+        </figure>
+      </div>
+      <div class="album-copy">
+        <p class="eyebrow" id="chapter-label">01 — A LITTLE FLOWER MOMENT</p>
+        <h2 id="album-title">Flowers bhi<br><em>competition</em> mein hain.</h2>
+        <p class="compliment" id="compliment">Roses cute hain… par meri nazar toh tum par hi ruk gayi. 🌹</p>
+        <div class="slide-dots" id="slide-dots" aria-label="Choose a photo"></div>
+        <div class="album-controls">
+          <button class="button secondary" id="previous-button" type="button" disabled>Pichhli photo</button>
+          <button class="button primary" id="next-button" type="button">Agli photo</button>
+        </div>
+        <button class="text-button" id="note-button" type="button">Ek chhoti si baat bhi hai…</button>
+      </div>
+      <div class="thumbnail-strip" id="thumbnail-strip" aria-label="All your pictures"></div>
+    </section>
+
+    <section class="screen letter" id="letter" aria-labelledby="letter-title" hidden>
+      <div class="letter-photo" aria-hidden="true"><img src="assets/63311.jpg" alt="" loading="lazy"><span>just a little extra effort.</span></div>
+      <div class="letter-copy">
+        <p class="eyebrow">ONE LAST THING</p>
+        <h2 id="letter-title">Ek compliment<br>se thoda <em>zyada.</em></h2>
+        <div class="letter-body">
+          <p>Socha ek compliment bhej du… phir laga, tumhare liye thodi extra mehnat toh banti hai.</p>
+          <p>Ye photos, ye song, aur ye chhota sa surprise — bas tumhare face pe ek smile laane ke liye.</p>
+          <p class="letter-highlight">Aur haan, tumse baat karna achha lagta hai.<br>Bas, ye bhi kehna tha. 🤍</p>
+        </div>
+        <p class="signature">— Aniket</p>
+        <div class="smile-box">
+          <p class="smile-question" id="smile-question">Toh… smile aayi? <span aria-hidden="true">😉</span></p>
+          <div class="reaction-buttons" id="reaction-buttons">
+            <button class="button primary" id="yes-button" type="button">Haan 😊</button>
+            <button class="button secondary" id="little-button" type="button">Thodi si 😏</button>
+          </div>
+          <p class="reaction-result" id="reaction-result" role="status" hidden></p>
+        </div>
+        <button class="text-button" id="again-button" type="button">Photos phir se dekhein?</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><span>A small surprise. A very real smile.</span><span>made for you <span aria-hidden="true">♡</span></span></footer>
+  <p class="status-note" id="status-note" role="status" hidden></p>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <audio id="song" src="assets/enna-sona.mp3" preload="metadata" loop></audio>
+  <noscript><p class="noscript">Please enable JavaScript to open your surprise. You can still listen to <a href="assets/enna-sona.mp3">Enna Sona</a>.</p></noscript>
+</body>
+</html>

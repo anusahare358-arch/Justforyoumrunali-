@@ -1,0 +1,13 @@
+JUST FOR YOU - WEBSITE
+
+Extract this ZIP and open index.html to preview.
+For a shareable link, upload the extracted folder to a static website host.
+Keep index.html, style.css, script.js and the assets folder together.
+
+All 9 photographs and the complete Enna Sona audio are included.
+Click Show me to begin the photo story and music.
+Music stays playing while you change photographs.
+The Enna Sona button can pause and resume the music.
+The final smile buttons show a local response; they do not send a message.
+
+To personalise the text, edit index.html and the photo captions in script.js.
